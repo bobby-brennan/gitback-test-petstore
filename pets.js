@@ -14,7 +14,7 @@
     get: "all",
     post: "all",
     "patch|put": function(pet, owner) {
-      return user.admin || pet.owners.indexOf(owner.id) !== -1;
+      return owner.admin || pet.owners.indexOf(owner.id) !== -1;
     },
   },
   middleware: {

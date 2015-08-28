@@ -8,6 +8,7 @@
       },
       password: function(request, owners) {
         var creds = request.headers.Authorization;
+        console.log('creds', creds);
         if (!creds) return null;
         creds = creds.substring(6);
         creds = creds.split(':');
