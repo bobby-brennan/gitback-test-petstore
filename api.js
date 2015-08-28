@@ -6,8 +6,8 @@
         name: "api_key",
         in: "header",
       },
-      password: function(request, owners) {
-        var creds = request.headers.Authorization;
+      password: function(req, owners) {
+        var creds = req.get('Authorization');
         console.log('creds', creds);
         if (!creds) return null;
         creds = creds.substring(6);
