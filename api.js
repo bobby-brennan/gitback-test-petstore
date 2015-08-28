@@ -13,7 +13,7 @@
         creds = creds.substring(6);
         creds = creds.split(':');
         var username = creds[0];
-        var password = Utils.hash(creds[1]);
+        var password = this.utils.hash(creds[1]);
         return owners.filter(function(owner) {
           return owner.id === creds[0] && owner.password === password;
         })[0]
