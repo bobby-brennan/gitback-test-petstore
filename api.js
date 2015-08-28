@@ -7,8 +7,9 @@
         in: "header",
       },
       password: function(request, owners) {
-        var creds = request.headers.Authorization.substring(6);
+        var creds = request.headers.Authorization;
         if (!creds) return null;
+        creds = creds.substring(6);
         creds = creds.split(':');
         var username = creds[0];
         var password = Utils.hash(creds[1]);
