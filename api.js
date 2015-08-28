@@ -8,7 +8,6 @@
       },
       password: function(req, owners) {
         var creds = req.get('Authorization');
-        console.log('creds', creds);
         if (!creds) return null;
         creds = creds.substring(6);
         creds = creds.split(':');
