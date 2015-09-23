@@ -1,1 +1,1 @@
-He's *hairy*
+http://localhost:3333/pets/Taco/description
