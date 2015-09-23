@@ -7,7 +7,13 @@
       name: {type: "string"},
       age: {type: "number"},
       type: {type: "string"},
-      owners: {type: "array", items: {type: "string"}}
+      owners: {type: "array", items: {type: "string"}},
+      description: {type: "string"},
+    }
+  },
+  attachments: {
+    description: {
+      extension: 'md'
     }
   },
   access: {
