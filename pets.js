@@ -17,7 +17,8 @@
       extension: 'md'
     },
     photo: {
-      extension: 'jpg'
+      extension: 'jpg',
+      strategy: 'link',
     },
   },
   access: {
