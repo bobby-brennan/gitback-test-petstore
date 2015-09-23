@@ -9,12 +9,16 @@
       type: {type: "string"},
       owners: {type: "array", items: {type: "string"}},
       description: {type: "string"},
+      photo: {type: "string"},
     }
   },
   attachments: {
     description: {
       extension: 'md'
-    }
+    },
+    photo: {
+      extension: 'jpg'
+    },
   },
   access: {
     get: "all",
